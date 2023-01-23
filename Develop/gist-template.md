@@ -1,10 +1,11 @@
-# Title (replace with your title)
+# Regular Expression Youtube Video Identifier  
 
-Introductory paragraph (replace this with your text)
+A regular expression (regex) is a unique and specific order of characters that specify a search pattern. It can be as simple as locating every word starting with a capital letter or as complicated as every instance of a vowel followed by a whitespace and then a three letter word. 
 
 ## Summary
+The regex that I will be covering within this tutorial is a Youtube URL validator. This regex search will recognize Youtube URLs in the many different variations that they come in. This regex can have many uses for blogging or social media applications such as auto-formatting videos or automatically switching any linked Youtube video to a Rick Roll. 
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+>/((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?/
 
 ## Table of Contents
 
@@ -23,7 +24,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
-
+Regex anchors are used to assert positions within the search parameters. They can be used to indicate the start or end of a line such as with the caret (^) and dollar sign ($) characters respectfully or word boundaries using /b. This particular regex does not use anchors as it’s designed to search the entirety of the text to locate Youtube URLs. 
 ### Quantifiers
 
 ### OR Operator
